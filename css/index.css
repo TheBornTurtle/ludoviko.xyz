@@ -1,0 +1,20 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
+
+code { font-family: 'Fira Code', monospace; }
+
+@supports (font-variation-settings: normal) {
+  code { font-family: 'Fira Code VF', monospace; }
+}
+
+body {
+  background-color: #a0a0a0 !important;
+}
+.main {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
