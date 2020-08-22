@@ -7,14 +7,22 @@ code { font-family: 'Fira Code', monospace; }
 }
 
 body {
+  margin: 5rem;
   background-color: #a0a0a0 !important;
 }
 .main {
     margin-top: 20px;
     margin-bottom: 40px;
+
 }
 
 .jumbotron {
     margin-bottom: 0;
     margin-top: 40px;
+}
+
+.about {
+  background-color: white;
+  margin-top: 40px;
+  padding: 3rem;
 }
