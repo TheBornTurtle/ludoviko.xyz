@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="/lang/en.json" type="application/json" data-vavilon-dict="en"></script>
+        <script src="/lang/eo.json" type="application/json" data-vavilon-dict="eo"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ludoviko.xyz</title>
@@ -9,6 +11,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vavilon@1.0.0/dist/vavilon.min.js"></script>
         <link rel="stylesheet" href="/css/index.css">
     </head>
 <body data-target="#navbar" data-spy="scroll">
@@ -20,9 +23,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-content">
             <div class="navbar-nav mr-auto" id="nav-items">
-                <a class="nav-item nav-link" href="#about">About</a>
-                <a class="nav-item nav-link" href="#projects">Projects</a>
-                <a class="nav-item nav-link" href="#social">Social</a>
+                <a class="nav-item nav-link vavilon" data-vavilon="index.about.title" href="#about">About</a>
+                <a class="nav-item nav-link vavilon" data-vavilon="index.projects.title" href="#projects">Projects</a>
+                <a class="nav-item nav-link vavilon" data-vavilon="index.social.title" href="#social">Social</a>
             </div>
         </div>
     </nav>
@@ -38,7 +41,7 @@
         <div class="about">
         <a class="anchor" id="about"></a>
         <div class="list-display rounded">
-            <h1>About Me</h1>
+            <h1 class="display-4 vavilon" data-vavilon="index.about.title">About</h1>
             <p></p>
         </div>
         </div>
