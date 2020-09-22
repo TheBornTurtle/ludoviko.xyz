@@ -40,17 +40,51 @@
             <div class="jumbotron">
                 <div class="container">
                     <h1 class="display-4 vavilon" data-vavilon="index.jumbotron.title">Saluton!</h1>
-                    <p class="lead vavilon" data-vavilon="index.jumbotron.subtitle">Welcome to my currently WIP site!</p>
+                    <h2 class="display-5 vavilon" data-vavilon="index.jumbotron.subtitle">Welcome to my currently WIP site!</h2>
                 </div>
             </div>
         </div>
-        <div class="about">
-        <a class="anchor" id="about"></a>
-        <div class="list-display rounded">
-            <h1 class="display-4 vavilon" data-vavilon="index.about.title">About</h1>
-            <p></p>
+        <div class="about rounded" id="about">
+            <a class="anchor"></a>
+            <div class="list-display rounded">
+                <h1 class="display-4 vavilon" data-vavilon="index.about.title">About</h1>
+                <h4 class="display-5 vavilon" data-vavilon="index.about.sub">So a bit about me:</h4>
+                <ul>
+                    <li class="vavilon" data-vavilon="index.about.age">Age: 21</li>
+                    <li class="vavilon" data-vavilon="index.about.loc">Location: Europe</li>
+                </ul>
+            </div>
         </div>
+        <div class="block projects rounded" id="projects">
+            <h1 class="display-4 vavilon" data-vavilon="index.projects.title">Projects</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Arbúcies</h5>
+                    <p class="card-body">A game project for the JVM written in Kotlin. The game is a rewrite of a game made by TheCherno on YouTube, this original project was made as a Java 2D game tutorial.</p>
+                    <span class="text-muted project-status">In Development</span>
+                    <a href="https://github.com/Lucxjo/Arbucies" class="card-link btn btn-outline-primary">GitHub Project</a>
+                    <a href="https://youtube.com/playlist?list=PLlrATfBNZ98eOOCk2fOFg7Qg5yoQfFAdf" class="card-link btn btn-outline-primary">Original Playlist</a>
+                </div>
+            </div>
+        </div>
+        <div class="block social rounded" id="social">
+            <h1 class="display-4 vavilon" data-vavilon="index.social.title">Social</h1>
+            <a href="https://twitter.com/itsatrtle" class="btn btn-light social-button">
+                <img class="social-image" src="/img/twitter.svg">
+                Twitter
+            </a>
+            <a rel="me" href="https://mstdn.social/@ludoviko" class="btn btn-light social-button">
+                <img src="/img/mstdn.svg" class="social-image">
+                Mastodon
+            </a>
         </div>
     </div>
+    <footer>
+        <div class="footer rounded-top">
+            <div>
+                <p>© 2020 Ludoviko (Louis Hollingworth)</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
