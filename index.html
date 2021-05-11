@@ -1,90 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script src="/lang/en.json" type="application/json" data-vavilon-dict="en" integrity="sha384-J6vlSSC1W3XSn/HENjp2X9kHDEks/bK62b2I4lcx2nAqjEAQwY9ln8LmTWy9teOU"></script>
-        <script src="/lang/eo.json" type="application/json" data-vavilon-dict="eo" integrity="sha384-yYD4LWKdOwHf4aUlbBqlHbAKhQZRm65DlFMT+FAQtH8qHePiNQYXhUZ4MwzrCqC0"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ludoviko.xyz</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/vavilon@1.0.0/dist/vavilon.min.js"></script>
-        <link rel="stylesheet" href="/css/index.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
-    </head>
-<body data-target="#navbar" data-spy="scroll">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light rounded-bottom">
-        <a href="#" class="navbar-brand">Ludoviko.xyz</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-content">
-            <div class="navbar-nav mr-auto" id="nav-items">
-                <a class="nav-item nav-link vavilon" data-vavilon="index.about.title" href="#about">About</a>
-                <a class="nav-item nav-link vavilon" data-vavilon="index.projects.title" href="#projects">Projects</a>
-                <a class="nav-item nav-link vavilon" data-vavilon="index.social.title" href="#social">Social</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Ludoviko | About</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-name">Ludoviko</div>
+        <div class="header-img">
+            <img src="/img/RingRingTechSupport.png" alt="">
+        </div>
+        <div class="header-links">
+            <div class="header-link">
+                <a rel="me" href="https://mstdn.social/@Ludoviko">
+                    <i class="material-icons">account_circle</i>
+                </a>
+            </div>
+            <div class="header-link">
+                <a href="mailto:me@ludoviko.xyz">
+                    <i class="material-icons">mail</i>
+                </a>
+            </div>
+            <div class="header-link">
+                <a href="https://liberapay.com/Ludoviko/donate">
+                    <i class="material-icons">monetization_on</i>
+                </a>
+            </div>
+            <div class="header-link">
+                <a href="https://matrix.to/#/+ludo_com:ludoviko.xyz">
+                    <i class="material-icons">chat</i>
+                </a>
+            </div>
+            <div class="header-link">
+                <a href="https://github.com/Lucxjo">
+                    <i class="material-icons">code</i>
+                </a>
+            </div>
+            <div class="header-link">
+                <a href="https://vimeo.com/user118706257">
+                    <i class="material-icons">play_circle</i>
+                </a>
             </div>
         </div>
-    </nav>
-    <div class="container main">
-        <div id="main">
-            <div class="jumbotron">
-                <div class="container">
-                    <h1 class="display-4 vavilon" data-vavilon="index.jumbotron.title">Saluton!</h1>
-                    <h2 class="display-5 vavilon" data-vavilon="index.jumbotron.subtitle">Welcome to my currently WIP site!</h2>
+        <div class="header-scroll"><i class="material-icons">expand_more</i></div>
+    </div>
+    <div class="body">
+        <div class="category" id="About">
+            <div class="category-header">
+                <div class="category-icon"><i class="material-icons">person</i></div>
+                <div class="category-title">About Me</div>
+            </div>
+            <div class="category-contents category-about">
+                <div class="tidbit-container about-tidbits">
+                    <div class="tidbit">
+                        <i class="material-icons">speaker_notes</i>
+                        He/Him They/Them
+                    </div>
+                    <div class="tidbit">
+                        <i class="material-icons">male</i>
+                        Male-ish
+                    </div>
+                    <div class="tidbit">
+                        <i class="material-icons">people_alt</i>
+                        Whatever it is, it isn't straight
+                    </div>
+                    <div class="tidbit">
+                        <i class="material-icons">location_on</i>
+                        Europe
+                    </div>
+                    <div class="tidbit">
+                        <i class="material-icons">cake</i>
+                        21
+                    </div>
+                    <div class="tidbit">
+                        <i class="material-icons">translate</i>
+                        EN + EO
+                    </div>
                 </div>
+                <p>Hi, I'm Louis, also known on the interwebs as Ludoviko. I'm an Electronics Engineer but code in my
+                    freetime.</p>
+                <p>I mainly work on Minecraft modding projects but I'm open for pretty much any other project ideas. I
+                    am still learning but feel free to contact me about commissions.</p>
             </div>
         </div>
-        <div class="about rounded" id="about">
-            <a class="anchor"></a>
-            <div class="list-display rounded">
-                <h1 class="display-4 vavilon" data-vavilon="index.about.title">About</h1>
-                <h4 class="display-5 vavilon" data-vavilon="index.about.sub">So a bit about me:</h4>
-                <ul>
-                    <li class="vavilon" data-vavilon="index.about.age">Age: 21</li>
-                    <li class="vavilon" data-vavilon="index.about.loc">Location: Europe</li>
-                </ul>
+        <div class="category" id="Projects">
+            <div class="category-header">
+                <div class="category-icon"><i class="material-icons">download_done</i></div>
+                <div class="category-title">Projects</div>
             </div>
-        </div>
-        <div class="block projects rounded" id="projects">
-            <h1 class="display-4 vavilon" data-vavilon="index.projects.title">Projects</h1>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Arbúcies</h5>
-                    <p class="card-body">A game project for the JVM written in Kotlin. The game is a rewrite of a game made by TheCherno on YouTube, this original project was made as a Java 2D game tutorial.</p>
-                    <span class="text-muted project-status">In Development</span>
-                    <a href="https://github.com/Lucxjo/Arbucies" class="card-link btn btn-outline-primary">GitHub Project</a>
-                    <a href="https://youtube.com/playlist?list=PLlrATfBNZ98eOOCk2fOFg7Qg5yoQfFAdf" class="card-link btn btn-outline-primary">Original Playlist</a>
-                </div>
+            <div class="category-contents category-projects">
+                I tend to work on open-source projects. Some of the ones that I'm actively working on are:
+
             </div>
-        </div>
-        <div class="block social rounded" id="social">
-            <h1 class="display-4 vavilon" data-vavilon="index.social.title">Social</h1>
-            <a href="https://twitter.com/itsatrtle" class="btn btn-light social-button">
-                <img class="social-image" src="/img/twitter.svg">
-                Twitter
-            </a>
-            <a rel="me" href="https://mstdn.social/@Ludoviko" class="btn btn-light social-button">
-                <img src="/img/mstdn.svg" class="social-image">
-                Mastodon
-            </a>
         </div>
     </div>
-    <footer>
-        <div class="footer rounded-top">
-            <div>
-                <p>© 2020 Ludoviko (Louis Hollingworth)</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
