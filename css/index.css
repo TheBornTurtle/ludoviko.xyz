@@ -57,6 +57,15 @@ body {
   float: left;
 }
 
+.comments {
+  margin-top: 2em;
+  background-color: white;
+  padding: 2rem;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
   margin-top: 3em;
   background-color: white;

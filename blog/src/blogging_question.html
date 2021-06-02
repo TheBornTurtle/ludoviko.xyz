@@ -16,10 +16,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="/css/index.css">
     <script src="https://cdn.jsdelivr.net/npm/vavilon@1.0.0/dist/vavilon.min.js"></script>
-
-    <!-- Cactus -->
-    <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
-    <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
 </head>
 <body data-spy="scroll" data-target="#navbar">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light rounded-bottom">
@@ -38,7 +34,7 @@
         </div>
     </nav>
 
-    <div class="container main blog">
+    <div class="container main blog rounded">
         <h1>Blogging?</h1>
         <p>Hello and welcome to my blog! I hope that you enjoy your stay here</p>
         <p>
@@ -75,16 +71,14 @@
         <p>Kun espero, Ludoviko</p>
     </div>
 
-    <div class="comment-section"></div>
-
-        <script>
-            initComments({
-                node: document.getElementById("comment-section"),
-                defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
-                serverName: "cactus.chat",
-                siteName: "ludoviko.xyz/blog",
-                commentSectionId: "blogging-question"
-            })
-        </script>
+    <div class="comments rounded">
+        <!-- Cactus -->
+        <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"
+        data-default-homeserver-url="https://matrix.cactus.chat:8448"
+        data-server-name="cactus.chat"
+        data-site-name="5d5351c6"
+        data-comment-section-id="blogging-question"></script>
+        <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+    </div>
 </body>
 </html>
