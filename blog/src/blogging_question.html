@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/lang/en.json" type="application/json" data-vavilon-dict="en"
+    integrity="sha384-J6vlSSC1W3XSn/HENjp2X9kHDEks/bK62b2I4lcx2nAqjEAQwY9ln8LmTWy9teOU"></script>
+<script src="/lang/eo.json" type="application/json" data-vavilon-dict="eo"
+    integrity="sha384-yYD4LWKdOwHf4aUlbBqlHbAKhQZRm65DlFMT+FAQtH8qHePiNQYXhUZ4MwzrCqC0"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludoviko's Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vavilon@1.0.0/dist/vavilon.min.js"></script>
+
+    <!-- Cactus -->
+    <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+    <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+</head>
+<body data-spy="scroll" data-target="#navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light rounded-bottom">
+        <a href="/" class="navbar-brand">Ludoviko.xyz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <div class="navbar-nav mr-auto" id="nav-items">
+                <a class="nav-item nav-link vavilon" data-vavilon="index.about.title" href="/#about">About</a>
+                <a class="nav-item nav-link vavilon" data-vavilon="index.projects.title" href="/#projects">Projects</a>
+                <a class="nav-item nav-link vavilon" data-vavilon="index.social.title" href="/#social">Social</a>
+                <a class="nav-item nav-link vavilon" data-vavilon="index.blog.title" href="/blog/">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main blog">
+        <h1>Blogging?</h1>
+        <p>Hello and welcome to my blog! I hope that you enjoy your stay here</p>
+        <p>
+            So a quick explaination as to why have a blog. 
+            I have been working on a few different projects and I decided that this would be the best way to talk about my projects and how I'm progressing. 
+            Despite this being the main reason, I'm going to also discuss other things about my life and causes that mean a lot to me.
+            This will also include a post about <em>pride</em> later in this month.
+        </p>
+        <h2>Life?</h2>
+        <p>
+            So for those of you who don&#39;t know, Ludoviko isn&#39;t my legal name. I don't feel comfortable with the entire world knowing my full identity.
+            Which poses the question as to how I'll talk about life.
+            I'm planning to do this by excluding anything that could identify me unless extremely necessary.
+            This should allow you to get a good grasp as to who I am as a person, while allowing me to keep a certain amount of anonymity.
+        </p>
+        <h2>Comments?</h2>
+        <p>
+            So I'm working on adding a comments system to this blog using <a href="https://cactus.chat">Cactus Comments</a>.
+            The scripts for this are already on this page, it just won't load as I'm typing this but that could be because of issues with localhost.
+            This comments system is built on top of the <a href="https://matrix.org">[matrix]</a> protocol.
+            I do host a homeserver for [matrix] but the cactus comments works on their homeserver at the moment.
+            You can send comments as anonymously as you like (just set your name to whatever you like)
+            Feel free to join me on [matrix] though! My hosted webclient is available <a href="https://chat.saluton.cc">here</a> but you can also use any compatible client!
+            My username is <a href="https://matrix.to/#/@ludoviko:saluton.cc">@ludoviko:saluton.cc</a>.
+        </p>
+        <h2>Not so final words?</h2>
+        <p>
+            So that was a lot of questions for a post. Don't worry, the titles of other posts won't all be questions!
+            I am looking at improving my website in the future, which will include a complete restart.
+            This includes an improvement to this blog to possibly include RSS/Atom feeds in the future!
+        </p>
+
+        <p>Until next time!</p>
+        <p>Kun espero, Ludoviko</p>
+    </div>
+
+    <div class="comment-section"></div>
+
+        <script>
+            initComments({
+                node: document.getElementById("comment-section"),
+                defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+                serverName: "cactus.chat",
+                siteName: "ludoviko.xyz/blog",
+                commentSectionId: "blogging-question"
+            })
+        </script>
+</body>
+</html>

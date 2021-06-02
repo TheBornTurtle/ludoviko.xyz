@@ -24,6 +24,11 @@ body {
   padding: 3em;
 }
 
+.blog {
+  background-color: white;
+  padding: 3em;
+}
+
 .block {
   margin-top: 2rem;
   background-color: white;
