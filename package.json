@@ -1,0 +1,13 @@
+{
+  "name": "ludoviko.xyz",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "web.js",
+  "repository": "https://github.com/Lucxjo/ludoviko.xyz.git",
+  "author": "Ludoviko <me@ludoviko.xyz>",
+  "license": "MIT",
+  "dependencies": {
+    "@dracula/dracula-ui": "^0.8.1",
+    "express": "^4.17.1"
+  }
+}
