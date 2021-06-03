@@ -6,8 +6,14 @@
   "repository": "https://github.com/Lucxjo/ludoviko.xyz.git",
   "author": "Ludoviko <me@ludoviko.xyz>",
   "license": "MIT",
+  "scripts": {
+    "ready": "rm -rf dist && mkdir dist && rsync -rv * dist --exclude ./dist"
+  },
   "dependencies": {
     "@dracula/dracula-ui": "^0.8.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^3.34.0"
   }
 }
