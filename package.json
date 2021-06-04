@@ -7,11 +7,18 @@
   "author": "Ludoviko <me@ludoviko.xyz>",
   "license": "MIT",
   "scripts": {
-    "ready": "rm -rf dist && mkdir dist && rsync -rv * dist --exclude ./dist"
+    "ready": "rm -rf dist && mkdir dist && rsync -rv * dist --exclude ./dist && rsync -rv ./.well-known dist --exclude ./dist",
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build"
   },
   "dependencies": {
     "@dracula/dracula-ui": "^0.8.1",
-    "express": "^4.17.1"
+    "bootstrap": "^5.0.0-beta3",
+    "express": "^4.17.1",
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "netlify-cli": "^3.34.0"
