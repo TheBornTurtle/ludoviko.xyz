@@ -124,7 +124,6 @@ export default function Home() {
             <Paragraph mt="sm">Here are some others that I use less frequently:</Paragraph>
             <List variant="unordered" color="purple">
               <li className="drac-text drac-text-white" >Switch Friend code: SW-1092-1929-2801</li>
-              <li className="drac-text drac-text-white" >Session ID: 05f7525a7ff9448f1e83dc32b2634e9fbaccaa2ce41eea324183401136adf4e755</li>
             </List>
           </Box>
         </Box>
