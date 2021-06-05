@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Navigation from '../components/nav.js'
-import Footer from '../components/footer.js'
-import { Box, Heading, Anchor, List, Card, Paragraph } from '@dracula/dracula-ui'
+import { Box, Heading, Anchor, List, Card, Paragraph, Avatar } from '@dracula/dracula-ui'
 
 export default function Home() {
   return (
-    <div className={styles.container} dataTarget="#navbar" dataSpy="scroll">
+    <div className={styles.container} data-target="#navbar" data-spy="scroll">
       <Head>
         <title>Ludoviko.xyz</title>
         <meta name="description" content="Ludo's place on the internet." />
@@ -14,8 +12,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      <Navigation />
+        <div id="cookieinfo"></div>
+        <script src="/cookieinfo.js"></script>
         <Box color="purpleCyan" rounded="lg" p="md" mt="lg" mx="md" >
+          <Avatar title="Ludoviko" src="/RingRingTechSupport.png" borderVariant="large" color="cyan" />
           <Heading size="2xl" color="black" >Saluton!</Heading>
           <Heading size="xl" color="black" >Welcome to my currently WIP site!</Heading>
         </Box>
@@ -110,7 +110,25 @@ export default function Home() {
           </Box>
         </Box>
 
-      <Footer />
+        <Box rounded="lg" p="md" m="md" color="blackSecondary" id="social" >
+          <Anchor></Anchor>
+          <Box className="list-display" >
+            <Heading size="2xl" color="purpleCyan" >Social</Heading>
+            <Paragraph >Here are the places that I spend my time on the internet. Feel free to follow and chat on any of them!</Paragraph>
+            <List variant="unordered" color="purple" >
+              <li className="drac-text drac-text-white" ><Anchor href="https://twitter.com/Ludoviko_" color="purple" hoverColor="pink" >Twitter</Anchor></li>
+              <li className="drac-text drac-text-white" ><Anchor href="https://mstdn.social/@Ludoviko" rel="me" color="purple" hoverColor="pink" >Mastodon</Anchor></li>
+              <li className="drac-text drac-text-white" ><Anchor href="https://github.com/Lucxjo" color="purple" hoverColor="pink" >Github</Anchor></li>
+              <li className="drac-text drac-text-white" ><Anchor href="https://matrix.to/#/@ludoviko:saluton.cc" color="purple" hoverColor="pink" >[matrix]</Anchor></li>
+              <li className="drac-text drac-text-white" ><Anchor href="mailto:me@ludoviko.xyz" color="purple" hoverColor="pink" >Email</Anchor></li>
+            </List>
+            <Paragraph mt="sm">Here are some others that I use less frequently:</Paragraph>
+            <List variant="unordered" color="purple">
+              <li className="drac-text drac-text-white" >Switch Friend code: SW-1092-1929-2801</li>
+              <li className="drac-text drac-text-white" >Session ID: 05f7525a7ff9448f1e83dc32b2634e9fbaccaa2ce41eea324183401136adf4e755</li>
+            </List>
+          </Box>
+        </Box>
       </main>
     </div>
   )

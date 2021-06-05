@@ -6,12 +6,12 @@ export default function Navigation() {
         <Anchor href="/" className="navbar-brand" color="purpleCyan" hoverColor="pinkPurple">Ludoviko.xyz</Anchor>
         <Button className="navbar-toggler"
             type="button"
-            dataToggle="collapse"
-            dataTarget="#navbarSupportedContent"
-            ariaControls="navbarSupportedContent"
-            ariaExpanded="false"
-            ariaLabel="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
         </Button>
         <div className="collapse navbar-collapse" id="navbar-content">
             <div className="navbar-nav mr-auto" id="nav-items">
