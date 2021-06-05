@@ -9,11 +9,10 @@ export default function Home() {
         <title>Ludoviko.xyz</title>
         <meta name="description" content="Ludo's place on the internet." />
         <link rel="icon" href="/RingRingTechSupport.ico" />
+        <meta name="keywords" content="Ludoviko, Programming, Minecraft, Game Development, Java, Blog, Kotlin"></meta>
       </Head>
 
       <main className={styles.main}>
-        <div id="cookieinfo"></div>
-        <script src="/cookieinfo.js"></script>
         <Box color="purpleCyan" rounded="lg" p="md" mt="lg" mx="md" >
           <Avatar title="Ludoviko" src="/RingRingTechSupport.png" borderVariant="large" color="cyan" />
           <Heading size="2xl" color="black" >Saluton!</Heading>

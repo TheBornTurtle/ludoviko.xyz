@@ -1,7 +1,7 @@
 import Layout from '../../../components/layout'
 import Head from 'next/head'
 import { getAllPostIds, getPostData } from '../../../lib/posts'
-import { Box, Heading, Anchor, List, Paragraph, Text } from '@dracula/dracula-ui'
+import { Box, Heading, Text } from '@dracula/dracula-ui'
 
 
 export async function getStaticProps({ params }) {
@@ -21,6 +21,14 @@ export async function getStaticPaths() {
   }
 }
 
+export function Comments({id}) {
+  if(getCookieConsentValue('comments') == "true") {
+    return <Layout></Layout>
+  } else {
+    return <Heading>Comments are not enabled.</Heading>
+  }
+}
+
 export default function Post({ postData }) {
   return <Layout>
       <Head>
@@ -33,7 +41,7 @@ export default function Post({ postData }) {
         <div dangerouslySetInnerHTML={{__html: postData.contentHtml}} className="drac-box drac-text drac-text-white" />
       </Box>
       <Box rounded="lg" p="md" m="md" color="blackSecondary" >
-        <div className="drac-text-white" dangerouslySetInnerHTML={{
+        <div className="drac-text-white drac-bg-black-secondary" dangerouslySetInnerHTML={{
             __html: `
             <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"
               data-default-homeserver-url="https://matrix.cactus.chat:8448"
