@@ -21,24 +21,20 @@ export async function getStaticPaths() {
   }
 }
 
-export function Comments({id}) {
-  if(getCookieConsentValue('comments') == "true") {
-    return <Layout></Layout>
-  } else {
-    return <Heading>Comments are not enabled.</Heading>
-  }
-}
-
 export default function Post({ postData }) {
   return <Layout>
       <Head>
-          <title>Ludo's Blog | {postData.title}</title>
-          <link rel="icon" href="/RingRingTechSupport.ico" />
+        <title>Ludo's Blog | {postData.title}</title>
+        <meta name="keywords" content={`${postData.keywords}`} key="keyw"></meta>
+        <meta property="og:title" content={`Ludo's Blog | ${postData.title}`} key="title" />
+        <meta name="description" content={postData.description} key="desc" />
+        <meta property="og:description" content={postData.description} key="og:desc" />
+        <meta property="og:type" content="article" key="og:type" />
       </Head>
       <Box rounded="lg" p="md" m="md" color="blackSecondary" >
         <Text className="date" align="right" >{postData.date}</Text>
-        <Heading size="2xl">{postData.title}</Heading>
-        <div dangerouslySetInnerHTML={{__html: postData.contentHtml}} className="drac-box drac-text drac-text-white" />
+        <Heading as="h1" size="2xl">{postData.title}</Heading>
+        <Box dangerouslySetInnerHTML={{__html: postData.contentHtml}} />
       </Box>
       <Box rounded="lg" p="md" m="md" color="blackSecondary" >
         <div className="drac-text-white drac-bg-black-secondary" dangerouslySetInnerHTML={{

@@ -7,9 +7,6 @@ export default function Home() {
     <div className={styles.container} data-target="#navbar" data-spy="scroll">
       <Head>
         <title>Ludoviko.xyz</title>
-        <meta name="description" content="Ludo's place on the internet." />
-        <link rel="icon" href="/RingRingTechSupport.ico" />
-        <meta name="keywords" content="Ludoviko, Programming, Minecraft, Game Development, Java, Blog, Kotlin"></meta>
       </Head>
 
       <main className={styles.main}>

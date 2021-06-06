@@ -16,8 +16,7 @@ export default function Blog({ allPostsData }) {
         <div data-target="#navbar" data-spy="scroll">
             <Head>
                 <title>Ludo's blog</title>
-                <meta name="description" content="Ludo's place on the internet." />
-                <link rel="icon" href="/RingRingTechSupport.ico" />
+                <meta property="og:title" content={`Ludo's Blog`} key="title" />
             </Head>
             <main>
                 <Box rounded="lg" p="md" m="md" color="blackSecondary" >

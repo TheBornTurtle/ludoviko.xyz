@@ -6,8 +6,6 @@ export default function Privacy() {
         <Box rounded="lg" p="md" m="md" color="blackSecondary">
             <Head>
                 <title>Ludoviko.xyz | Privacy</title>
-                <meta name="description" content="Ludo's place on the internet." />
-                <link rel="icon" href="/RingRingTechSupport.ico" />
             </Head>
             <Heading size="2xl">Privacy Policy</Heading>
             <Paragraph>This site uses cookies to store information about your browsing activity.</Paragraph>
