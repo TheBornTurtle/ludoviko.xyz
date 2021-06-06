@@ -12,7 +12,7 @@ export default function Home() {
       <main className={styles.main}>
         <Box color="purpleCyan" rounded="lg" p="md" mt="lg" mx="md" >
           <Avatar title="Ludoviko" src="/RingRingTechSupport.png" borderVariant="large" color="cyan" />
-          <Heading size="2xl" color="black" >Saluton!</Heading>
+          <Heading as="h1" size="2xl" color="black" >Saluton!</Heading>
           <Heading size="xl" color="black" >Welcome to my currently WIP site!</Heading>
         </Box>
 
