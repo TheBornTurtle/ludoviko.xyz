@@ -3,8 +3,8 @@ module.exports = {
     async rewrites() {
         return [
             {
-                source: '/js/index.js',
-                destination: 'https://plausible.io/js/plausible.js'
+                source: '/js/index.outbound-links.js',
+                destination: 'https://plausible.io/js/plausible.outbound-links.js'
             },
             {
                 source: '/api/event', // Or '/api/event/' if you have `trailingSlash: true` in this config
