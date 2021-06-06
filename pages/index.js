@@ -19,7 +19,7 @@ export default function Home() {
         <Box rounded="lg" p="md" m="md" color="blackSecondary" id="about" >
           <Anchor></Anchor>
           <Box className="list-display" >
-            <Heading size="2xl" color="purpleCyan" >About</Heading>
+            <Heading as="h1" size="2xl" color="purpleCyan" >About</Heading>
             <Heading size="lg" >So a bit about me:</Heading>
             <List variant="unordered" color="purple" >
               <li className="drac-text drac-text-white" >Age: 21</li>
@@ -35,7 +35,7 @@ export default function Home() {
         <Box rounded="lg" p="md" m="md" color="blackSecondary" id="projects" >
           <Anchor></Anchor>
           <Box className="list-display" >
-            <Heading size="2xl" color="purpleCyan" m="md" >Projects</Heading>
+            <Heading as="h1" size="2xl" color="purpleCyan" m="md" >Projects</Heading>
             <Card variant="subtle" color="pink" m="sm" >
               <Heading size="lg" className="card-title" p="sm" >Arbúcies</Heading>
               <Paragraph  px="md" >
@@ -109,7 +109,7 @@ export default function Home() {
         <Box rounded="lg" p="md" m="md" color="blackSecondary" id="social" >
           <Anchor></Anchor>
           <Box className="list-display" >
-            <Heading size="2xl" color="purpleCyan" >Social</Heading>
+            <Heading as="h1" size="2xl" color="purpleCyan" >Social</Heading>
             <Paragraph >Here are the places that I spend my time on the internet. Feel free to follow and chat on any of them!</Paragraph>
             <List variant="unordered" color="purple" >
               <li className="drac-text drac-text-white" ><Anchor href="https://twitter.com/Ludoviko_" color="purple" hoverColor="pink" >Twitter</Anchor></li>
