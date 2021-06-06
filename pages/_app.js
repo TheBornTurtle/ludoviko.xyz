@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" key="og:type" />
         <meta property="og:image" content="/RingRingTechSupport.png" key="og:img" />
         <meta name="keywords" content="Ludoviko, Programming, Minecraft, Game Development, Java, Blog, Kotlin" key="keyw" />
+        <script async defer data-domain="ludoviko.xyz" src="https://plausible.io/js/plausible.js"></script>
       </Head>
       <Navigation />
       <Component {...pageProps} />
