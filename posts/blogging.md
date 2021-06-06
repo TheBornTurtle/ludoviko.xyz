@@ -15,8 +15,7 @@ So for those of you who don&#39;t know, Ludoviko isn&#39;t my legal name. I don'
 So I'm working on adding a comments system to this blog using [Cactus Comments](https://cactus.chat). The scripts for this are already on this page, it just won't load as I'm typing this but that could be because of issues with localhost. This comments system is built on top of the [\[matrix\]](https://matrix.org) protocol. I do host a homeserver for [matrix] but the cactus comments works on their homeserver at the moment. You can send comments as anonymously as you like (just set your name to whatever you like). You do not need to sign in to comment, just type a message and a name then hit the post button! Feel free to join me on [matrix] though! My hosted webclient is available [here](https://chat.saluton.cc) but you can also use any compatible client! My username is [@ludoviko:saluton.cc](https://matrix.to/#/@ludoviko:saluton.cc).
 
 ## Not so final words?
-
-So that was a lot of questions for a post. Don't worry, the titles of other posts won't all be questions! I am looking at improving my website in the future, which will include a complete restart. This includes an improvement to this blog to possibly include RSS/Atom feeds in the future!
+I am looking at improving my website in the future, which will include a complete restart. This includes an improvement to this blog to possibly include RSS/Atom feeds in the future!
 
 Until next time!
 
