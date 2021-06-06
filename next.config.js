@@ -1,5 +1,5 @@
 module.exports = {
-    target = "serverless",
+    target: "serverless",
     async rewrites() {
         return [
             {
