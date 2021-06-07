@@ -2,7 +2,6 @@ import Layout from '../../../components/layout'
 import Head from 'next/head'
 import { getAllPostIds, getPostData } from '../../../lib/posts'
 import { Box, Heading, Text, Paragraph } from '@dracula/dracula-ui'
-import Router from 'next/router'
 
 
 export async function getStaticProps({ params }) {
