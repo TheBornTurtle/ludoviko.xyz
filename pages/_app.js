@@ -11,7 +11,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <PlausibleProvider trackOutboundLinks={true} domain="ludoviko.xyz" customDomain="">
         <Head>
-          <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="dd0601cf-afc9-41f1-9cd6-ce9c0d65f67b" data-blockingmode="auto" type="text/javascript"></script>
           <link rel="icon" href="/RingRingTechSupport.ico" />
           <meta property="og:title" content="Ludoviko.xyz" key="title" />
           <meta name="description" content="Ludoviko's little place on the internet" key="desc" />
@@ -19,6 +18,9 @@ function MyApp({ Component, pageProps }) {
           <meta property="og:type" content="website" key="og:type" />
           <meta property="og:image" content="/RingRingTechSupport.png" key="og:img" />
           <meta name="keywords" content="Ludoviko, Programming, Minecraft, Game Development, Java, Blog, Kotlin" key="keyw" />
+          <script type="text/javascript" src="/iubenda.js" />
+          <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
+          <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
         </Head>
         <Navigation />
         <Component {...pageProps} />

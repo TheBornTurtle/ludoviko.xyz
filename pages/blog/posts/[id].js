@@ -30,8 +30,6 @@ export default function Post({ postData }) {
         <meta name="description" content={postData.description} key="desc" />
         <meta property="og:description" content={postData.description} key="og:desc" />
         <meta property="og:type" content="article" key="og:type" />
-            <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
-            <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css" />
       </Head>
       <Box rounded="lg" p="md" m="md" color="blackSecondary" >
         <Text className="date" align="right" >{postData.date}</Text>
@@ -43,7 +41,7 @@ export default function Post({ postData }) {
         <Paragraph>If comments are not loading and you have accepted cookies, please refresh page.</Paragraph>
         <div className="drac-text-white drac-bg-black-secondary" dangerouslySetInnerHTML={{
             __html: `
-            <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"
+            <script class="_iub_cs_activate" type="text/plain" src="https://latest.cactus.chat/cactus.js"
               data-default-homeserver-url="https://matrix.cactus.chat:8448"
               data-server-name="cactus.chat"
               data-site-name="5d5351c6"

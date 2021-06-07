@@ -17,8 +17,6 @@ export default function Home() {
           <Heading size="xl" color="black" >Welcome to my currently WIP site!</Heading>
         </Box>
 
-        <script id="CookieDeclaration" src="https://consent.cookiebot.com/dd0601cf-afc9-41f1-9cd6-ce9c0d65f67b/cd.js" type="text/javascript" async></script>
-
         <Box rounded="lg" p="md" m="md" color="blackSecondary" id="about" >
           <Anchor></Anchor>
           <Box className="list-display" >
