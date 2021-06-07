@@ -1,2 +1,2 @@
 var _iub = _iub || [];
-_iub.csConfiguration = {"consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"en","siteId":2272083,"perPurposeConsent":true,"enableCMP":true,"cookiePolicyId":11941817, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-top-center","rejectButtonDisplay":true }};
+_iub.csConfiguration = {"reloadOnConsent":true,"askConsentAtCookiePolicyUpdate":true,"consentOnContinuedBrowsing":false,"perPurposeConsent":true,"whitelabel":false,"lang":"en","siteId":2272083,"cookiePolicyId":11941817, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"rejectButtonDisplay":true,"position":"float-top-center" }};
