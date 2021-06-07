@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <PlausibleProvider trackOutboundLinks={true} domain="ludoviko.xyz" customDomain="">
         <Head>
+          <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="dd0601cf-afc9-41f1-9cd6-ce9c0d65f67b" data-blockingmode="auto" type="text/javascript"></script>
           <link rel="icon" href="/RingRingTechSupport.ico" />
           <meta property="og:title" content="Ludoviko.xyz" key="title" />
           <meta name="description" content="Ludoviko's little place on the internet" key="desc" />

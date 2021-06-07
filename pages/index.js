@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { Box, Heading, Anchor, List, Card, Paragraph, Avatar } from '@dracula/dracula-ui'
 
@@ -15,6 +16,8 @@ export default function Home() {
           <Heading as="h1" size="2xl" color="black" >Saluton!</Heading>
           <Heading size="xl" color="black" >Welcome to my currently WIP site!</Heading>
         </Box>
+
+        <script id="CookieDeclaration" src="https://consent.cookiebot.com/dd0601cf-afc9-41f1-9cd6-ce9c0d65f67b/cd.js" type="text/javascript" async></script>
 
         <Box rounded="lg" p="md" m="md" color="blackSecondary" id="about" >
           <Anchor></Anchor>
@@ -43,21 +46,20 @@ export default function Home() {
                 The game is a rewrite of a game made by TheCherno on YouTube,
                 this original project was made as a Java 2D game tutorial.
               </Paragraph>
-              <Anchor href='https://github.com/Lucxjo/Arbucies'
+              <Link href='https://github.com/Lucxjo/Arbucies' passHref><Anchor
                 isExternal="true"
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Github Project
-              </Anchor>
-              <Anchor
-                href='https://youtube.com/playlist?list=PLlrATfBNZ98eOOCk2fOFg7Qg5yoQfFAdf'
+              </Anchor></Link>
+              <Link href='https://youtube.com/playlist?list=PLlrATfBNZ98eOOCk2fOFg7Qg5yoQfFAdf' passHref><Anchor
                 isExternal="true"
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Original Playlist
-              </Anchor>
+              </Anchor></Link>
             </Card>
             <Card variant="subtle" color="pink" m="sm" >
               <Heading size="lg" className="card-title" p="sm" >Kontrolo (Fabric)</Heading>
@@ -65,21 +67,20 @@ export default function Home() {
                 A Minecraft mod for the Fabric mod loader. This mod adds a GUI for common commands that can be clicked to be excecuted.
                 The mod also adds a GUI for you to add your own commands through a config file.
               </Paragraph>
-              <Anchor href='https://github.com/Lucxjo/Kontrolo-Fabric'
+              <Link href='https://github.com/Lucxjo/Kontrolo-Fabric' passHref><Anchor
                 isExternal="true"
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Github Project
-              </Anchor>
-              <Anchor
-                href='https://modrinth.com/mod/kontrolo'
+              </Anchor></Link>
+              <Link href='https://modrinth.com/mod/kontrolo' passHref><Anchor
                 isExternal="true"
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Download
-              </Anchor>
+              </Anchor></Link>
             </Card>
             <Card variant="subtle" color="pink" m="sm" >
               <Heading size="lg" className="card-title" p="sm" >Kontrolo (Forge)</Heading>
@@ -87,21 +88,54 @@ export default function Home() {
                 A Minecraft mod for the Forge mod loader. This mod adds a GUI for common commands that can be clicked to be excecuted.
                 The mod also adds a GUI for you to add your own commands through a config file.
               </Paragraph>
-              <Anchor href='https://github.com/Lucxjo/Kontrolo-Forge'
+              <Link href='https://github.com/Lucxjo/Kontrolo-Forge' passHref><Anchor
                 isExternal="true"
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Github Project
-              </Anchor>
-              <Anchor
-                href='https://modrinth.com/mod/kontrolo-forge'
+              </Anchor></Link>
+              <Link href='https://modrinth.com/mod/kontrolo-forge' passHref><Anchor
                 isExternal="true"
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Download
-              </Anchor>
+              </Anchor></Link>
+            </Card>
+            <Card variant="subtle" color="pink" m="sm" >
+              <Heading size="lg" className="card-title" p="sm" >Vetero.js</Heading>
+              <Paragraph  px="md" >
+                A simple weather app built in React.js
+              </Paragraph>
+              <Link href='https://github.com/Lucxjo/vetero-js' passHref><Anchor
+                isExternal="true"
+                p="sm"
+                color="purple"
+                hoverColor="pink" >
+                  Github Project
+              </Anchor></Link>
+              <Link href='https://v.ludoviko.xyz' passHref><Anchor
+                isExternal="true"
+                p="sm"
+                color="purple"
+                hoverColor="pink" >
+                  View
+              </Anchor></Link>
+            </Card>
+            <Card variant="subtle" color="pink" m="sm" >
+              <Heading size="lg" className="card-title" p="sm" >Ludoviko.xyz</Heading>
+              <Paragraph  px="md" >
+                This website! Technically it is one of my projects, so it deserves to be in this list. Right?
+                Built in Next.js with Dracuala theming from the Dracula UI kit.
+              </Paragraph>
+              <Link href='https://github.com/Lucxjo/ludoviko.xyz' passHref><Anchor
+                isExternal="true"
+                p="sm"
+                color="purple"
+                hoverColor="pink" >
+                  Github Project
+              </Anchor></Link>
             </Card>
           </Box>
         </Box>
@@ -112,15 +146,31 @@ export default function Home() {
             <Heading as="h1" size="2xl" color="purpleCyan" >Social</Heading>
             <Paragraph >Here are the places that I spend my time on the internet. Feel free to follow and chat on any of them!</Paragraph>
             <List variant="unordered" color="purple" >
-              <li className="drac-text drac-text-white" ><Anchor href="https://twitter.com/Ludoviko_" color="purple" hoverColor="pink" >Twitter</Anchor></li>
-              <li className="drac-text drac-text-white" ><Anchor href="https://mstdn.social/@Ludoviko" rel="me" color="purple" hoverColor="pink" >Mastodon</Anchor></li>
-              <li className="drac-text drac-text-white" ><Anchor href="https://github.com/Lucxjo" color="purple" hoverColor="pink" >Github</Anchor></li>
-              <li className="drac-text drac-text-white" ><Anchor href="https://matrix.to/#/@ludoviko:saluton.cc" color="purple" hoverColor="pink" >[matrix]</Anchor></li>
-              <li className="drac-text drac-text-white" ><Anchor href="mailto:me@ludoviko.xyz" color="purple" hoverColor="pink" >Email</Anchor></li>
+              <li className="drac-text drac-text-white" >
+                <Link href="https://twitter.com/Ludoviko_" passHref><Anchor color="purple" hoverColor="pink" >Twitter</Anchor></Link>
+              </li>
+              <li className="drac-text drac-text-white" >
+                <Link href="https://mstdn.social/@Ludoviko" passHref><Anchor rel="me" color="purple" hoverColor="pink" >Mastodon</Anchor></Link>
+              </li>
+              <li className="drac-text drac-text-white" >
+                <Link href="https://github.com/Lucxjo" passHref><Anchor color="purple" hoverColor="pink" >Github</Anchor></Link>
+              </li>
+              <li className="drac-text drac-text-white" >
+                <Link href="https://matrix.to/#/@ludoviko:saluton.cc" passHref><Anchor color="purple" hoverColor="pink" >[matrix]</Anchor></Link>
+              </li>
+              <li className="drac-text drac-text-white" >
+                <Link href="mailto:me@ludoviko.xyz" passHref><Anchor color="purple" hoverColor="pink" >Email</Anchor></Link>
+              </li>
             </List>
             <Paragraph mt="sm">Here are some others that I use less frequently:</Paragraph>
             <List variant="unordered" color="purple">
               <li className="drac-text drac-text-white" >Switch Friend code: SW-1092-1929-2801</li>
+              <li className="drac-text drac-text-white" >
+                <Link href="https://www.twitch.tv/ludoviko_" passHref><Anchor color="purple" hoverColor="pink" >Twitch.tv</Anchor></Link>
+              </li>
+              <li className="drac-text drac-text-white" >
+                <Link href="https://pixelfed.de/Lucxjo" passHref><Anchor color="purple" hoverColor="pink" >Pixelfed</Anchor></Link>
+              </li>
             </List>
           </Box>
         </Box>
