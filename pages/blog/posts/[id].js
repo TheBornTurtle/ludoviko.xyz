@@ -1,7 +1,7 @@
 import Layout from '../../../components/layout'
 import Head from 'next/head'
 import { getAllPostIds, getPostData } from '../../../lib/posts'
-import { Box, Heading, Text } from '@dracula/dracula-ui'
+import { Box, Heading, Text, Paragraph } from '@dracula/dracula-ui'
 
 
 export async function getStaticProps({ params }) {
@@ -30,6 +30,8 @@ export default function Post({ postData }) {
         <meta name="description" content={postData.description} key="desc" />
         <meta property="og:description" content={postData.description} key="og:desc" />
         <meta property="og:type" content="article" key="og:type" />
+            <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+            <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css" />
       </Head>
       <Box rounded="lg" p="md" m="md" color="blackSecondary" >
         <Text className="date" align="right" >{postData.date}</Text>
@@ -37,6 +39,8 @@ export default function Post({ postData }) {
         <Box dangerouslySetInnerHTML={{__html: postData.contentHtml}} />
       </Box>
       <Box rounded="lg" p="md" m="md" color="blackSecondary" >
+        <Heading as="h1" size="2xl">Comments</Heading>
+        <Paragraph>If comments are not loading and you have accepted cookies, please refresh page.</Paragraph>
         <div className="drac-text-white drac-bg-black-secondary" dangerouslySetInnerHTML={{
             __html: `
             <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"
