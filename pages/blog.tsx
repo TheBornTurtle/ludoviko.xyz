@@ -21,7 +21,7 @@ export default function Blog({
         date: string
         title: string
         description: string
-    }
+    }[]
 }
 ) {
     return (
