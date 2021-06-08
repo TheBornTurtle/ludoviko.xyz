@@ -2,9 +2,10 @@ import Layout from '../../../components/layout'
 import Head from 'next/head'
 import { getAllPostIds, getPostData } from '../../../lib/posts'
 import { Box, Heading, Text, Paragraph } from '@dracula/dracula-ui'
+import { GetStaticProps, GetStaticPaths } from 'next'
 
 
-export async function getStaticProps({ params }) {
+export const getStaticProps = async ({ params }) => {
   const postData = await getPostData(params.id)
   return {
     props: {
@@ -13,7 +14,7 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths = async () => {
   const paths = getAllPostIds()
   return {
     paths,
@@ -21,7 +22,19 @@ export async function getStaticPaths() {
   }
 }
 
-export default function Post({ postData }) {
+export default function Post({
+  postData
+}: {
+  postData: {
+    title: string
+    date: string
+    keywords: string
+    description: string
+    contentHtml: string
+    id: string
+  }
+}
+) {
   return <Layout>
       <Head>
         <title>Ludo's Blog | {postData.title}</title>
@@ -32,9 +45,11 @@ export default function Post({ postData }) {
         <meta property="og:type" content="article" key="og:type" />
       </Head>
       <Box rounded="lg" p="md" m="md" color="blackSecondary" >
-        <Text className="date" align="right" >{postData.date}</Text>
-        <Heading as="h1" size="2xl">{postData.title}</Heading>
-        <Box dangerouslySetInnerHTML={{__html: postData.contentHtml}} />
+        <article>
+          <Text className="date" align="right" >{postData.date}</Text>
+          <Heading as="h1" size="2xl">{postData.title}</Heading>
+          <Box dangerouslySetInnerHTML={{__html: postData.contentHtml}} />
+        </article>
       </Box>
       <Box rounded="lg" p="md" m="md" color="blackSecondary" >
         <Heading as="h1" size="2xl">Comments</Heading>

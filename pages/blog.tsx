@@ -2,8 +2,9 @@ import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
 import { Box, Heading, Anchor, Card, Paragraph } from '@dracula/dracula-ui'
 import Link from 'next/link'
+import { GetStaticProps } from 'next'
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
     const allPostsData = getSortedPostsData()
     return {
         props: {
@@ -12,7 +13,17 @@ export async function getStaticProps() {
     }
 }
 
-export default function Blog({ allPostsData }) {
+export default function Blog({
+    allPostsData
+}: {
+    allPostsData: {
+        id: string
+        date: string
+        title: string
+        description: string
+    }
+}
+) {
     return (
         <div data-target="#navbar" data-spy="scroll">
             <Head>

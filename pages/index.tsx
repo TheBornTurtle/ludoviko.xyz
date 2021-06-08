@@ -45,14 +45,14 @@ export default function Home() {
                 this original project was made as a Java 2D game tutorial.
               </Paragraph>
               <Link href='https://github.com/Lucxjo/Arbucies' passHref><Anchor
-                isExternal="true"
+                isExternal={true}
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Github Project
               </Anchor></Link>
               <Link href='https://youtube.com/playlist?list=PLlrATfBNZ98eOOCk2fOFg7Qg5yoQfFAdf' passHref><Anchor
-                isExternal="true"
+                isExternal={true}
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
@@ -66,14 +66,14 @@ export default function Home() {
                 The mod also adds a GUI for you to add your own commands through a config file.
               </Paragraph>
               <Link href='https://github.com/Lucxjo/Kontrolo-Fabric' passHref><Anchor
-                isExternal="true"
+                isExternal={true}
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Github Project
               </Anchor></Link>
               <Link href='https://modrinth.com/mod/kontrolo' passHref><Anchor
-                isExternal="true"
+                isExternal={true}
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
@@ -87,14 +87,14 @@ export default function Home() {
                 The mod also adds a GUI for you to add your own commands through a config file.
               </Paragraph>
               <Link href='https://github.com/Lucxjo/Kontrolo-Forge' passHref><Anchor
-                isExternal="true"
+                isExternal={true}
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Github Project
               </Anchor></Link>
               <Link href='https://modrinth.com/mod/kontrolo-forge' passHref><Anchor
-                isExternal="true"
+                isExternal={true}
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
@@ -107,14 +107,14 @@ export default function Home() {
                 A simple weather app built in React.js
               </Paragraph>
               <Link href='https://github.com/Lucxjo/vetero-js' passHref><Anchor
-                isExternal="true"
+                isExternal={true}
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
                   Github Project
               </Anchor></Link>
               <Link href='https://v.ludoviko.xyz' passHref><Anchor
-                isExternal="true"
+                isExternal={true}
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
@@ -128,7 +128,7 @@ export default function Home() {
                 Built in Next.js with Dracuala theming from the Dracula UI kit.
               </Paragraph>
               <Link href='https://github.com/Lucxjo/ludoviko.xyz' passHref><Anchor
-                isExternal="true"
+                isExternal={true}
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
@@ -145,29 +145,29 @@ export default function Home() {
             <Paragraph >Here are the places that I spend my time on the internet. Feel free to follow and chat on any of them!</Paragraph>
             <List variant="unordered" color="purple" >
               <li className="drac-text drac-text-white" >
-                <Link href="https://twitter.com/Ludoviko_" passHref><Anchor color="purple" hoverColor="pink" >Twitter</Anchor></Link>
+                <Link href="https://twitter.com/Ludoviko_" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Twitter</Anchor></Link>
               </li>
               <li className="drac-text drac-text-white" >
-                <Link href="https://mstdn.social/@Ludoviko" passHref><Anchor rel="me" color="purple" hoverColor="pink" >Mastodon</Anchor></Link>
+                <Link href="https://mstdn.social/@Ludoviko" passHref><Anchor isExternal={true} rel="me" color="purple" hoverColor="pink" >Mastodon</Anchor></Link>
               </li>
               <li className="drac-text drac-text-white" >
-                <Link href="https://github.com/Lucxjo" passHref><Anchor color="purple" hoverColor="pink" >Github</Anchor></Link>
+                <Link href="https://github.com/Lucxjo" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Github</Anchor></Link>
               </li>
               <li className="drac-text drac-text-white" >
-                <Link href="https://matrix.to/#/@ludoviko:saluton.cc" passHref><Anchor color="purple" hoverColor="pink" >[matrix]</Anchor></Link>
+                <Link href="https://matrix.to/#/@ludoviko:saluton.cc" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >[matrix]</Anchor></Link>
               </li>
               <li className="drac-text drac-text-white" >
-                <Link href="mailto:me@ludoviko.xyz" passHref><Anchor color="purple" hoverColor="pink" >Email</Anchor></Link>
+                <Link href="mailto:me@ludoviko.xyz" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Email</Anchor></Link>
               </li>
             </List>
             <Paragraph mt="sm">Here are some others that I use less frequently:</Paragraph>
             <List variant="unordered" color="purple">
               <li className="drac-text drac-text-white" >Switch Friend code: SW-1092-1929-2801</li>
               <li className="drac-text drac-text-white" >
-                <Link href="https://www.twitch.tv/ludoviko_" passHref><Anchor color="purple" hoverColor="pink" >Twitch.tv</Anchor></Link>
+                <Link href="https://www.twitch.tv/ludoviko_" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Twitch.tv</Anchor></Link>
               </li>
               <li className="drac-text drac-text-white" >
-                <Link href="https://pixelfed.de/Lucxjo" passHref><Anchor color="purple" hoverColor="pink" >Pixelfed</Anchor></Link>
+                <Link href="https://pixelfed.de/Lucxjo" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Pixelfed</Anchor></Link>
               </li>
             </List>
           </Box>

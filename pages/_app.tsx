@@ -1,12 +1,13 @@
 import '../styles/globals.css'
-import '@dracula/dracula-ui/styles/dracula-ui.css'
 import 'bootstrap/dist/css/bootstrap.css'
+import '@dracula/dracula-ui/styles/dracula-ui.css'
+import { AppProps } from 'next/app'
 import Navigation from '../components/nav'
-import Footer from '../components/footer.js'
+import Footer from '../components/footer'
 import Head from 'next/head'
 import PlausibleProvider from 'next-plausible'
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <PlausibleProvider trackOutboundLinks={true} domain="ludoviko.xyz" customDomain="">
@@ -20,7 +21,7 @@ function MyApp({ Component, pageProps }) {
           <meta name="keywords" content="Ludoviko, Programming, Minecraft, Game Development, Java, Blog, Kotlin" key="keyw" />
           <script type="text/javascript" src="/iubenda.js" />
           <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
-          <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+          <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charSet="UTF-8" async></script>
         </Head>
         <Navigation />
         <Component {...pageProps} />
@@ -30,4 +31,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default App
