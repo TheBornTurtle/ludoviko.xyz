@@ -20,6 +20,19 @@ module.exports = {
 }
 
 module.exports = withTM({
+    target: "serverless",
+    async rewrites() {
+        return [
+            {
+                source: '/js/index.outbound-links.js',
+                destination: 'https://plausible.io/js/plausible.outbound-links.js'
+            },
+            {
+                source: '/api/event', // Or '/api/event/' if you have `trailingSlash: true` in this config
+                destination: 'https://plausible.io/api/event'
+            }
+      ];
+  },
   future: {
     webpack5: true, // if you want to use webpack 5
   },
