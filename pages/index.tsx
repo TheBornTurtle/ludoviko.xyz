@@ -11,13 +11,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Box color="purpleCyan" rounded="lg" p="md" mt="lg" mx="md" >
+        <Card color="purpleCyan" rounded="lg" p="md" mt="lg" mx="md" >
           <Avatar title="Ludoviko" src="/RingRingTechSupport.png" borderVariant="large" color="cyan" />
           <Heading as="h1" size="2xl" color="black" >Saluton!</Heading>
           <Heading size="xl" color="black" >Welcome to my currently WIP site!</Heading>
-        </Box>
+        </Card>
 
-        <Box rounded="lg" p="md" m="md" color="blackSecondary" id="about" >
+        <Card rounded="lg" p="md" m="md" color="blackSecondary" id="about" >
           <Anchor></Anchor>
           <Box className="list-display" >
             <Heading as="h1" size="2xl" color="purpleCyan" >About</Heading>
@@ -31,9 +31,9 @@ export default function Home() {
               <li className="drac-text drac-text-white" >Languages: en-GB, es-ES, eo-EO</li>
             </List>
           </Box>
-        </Box>
+        </Card>
 
-        <Box rounded="lg" p="md" m="md" color="blackSecondary" id="projects" >
+        <Card rounded="lg" p="md" m="md" color="blackSecondary" id="projects" >
           <Anchor></Anchor>
           <Box className="list-display" >
             <Heading as="h1" size="2xl" color="purpleCyan" m="md" >Projects</Heading>
@@ -53,52 +53,30 @@ export default function Home() {
               </Anchor></Link>
               <Link href='https://youtube.com/playlist?list=PLlrATfBNZ98eOOCk2fOFg7Qg5yoQfFAdf' passHref><Anchor
                 isExternal={true}
-                p="sm"
+                p="xs"
                 color="purple"
                 hoverColor="pink" >
                   Original Playlist
               </Anchor></Link>
             </Card>
             <Card variant="subtle" color="pink" m="sm" >
-              <Heading size="lg" className="card-title" p="sm" >Kontrolo (Fabric)</Heading>
+              <Heading size="lg" className="card-title" p="sm" >Minecraft Projects</Heading>
               <Paragraph  px="md" >
-                A Minecraft mod for the Fabric mod loader. This mod adds a GUI for common commands that can be clicked to be excecuted.
-                The mod also adds a GUI for you to add your own commands through a config file.
+                I have a couple of Minecraft mods, these can be found on a different page. Click the link below to view them!
+                I also have a server, this can be found on the same page as the mods at the bottom.
+                The server link will jump you straight to that section!
               </Paragraph>
-              <Link href='https://github.com/Lucxjo/Kontrolo-Fabric' passHref><Anchor
-                isExternal={true}
+              <Link href='/mc/#mods' passHref><Anchor
                 p="sm"
                 color="purple"
                 hoverColor="pink" >
-                  Github Project
+                  Mods
               </Anchor></Link>
-              <Link href='https://modrinth.com/mod/kontrolo' passHref><Anchor
-                isExternal={true}
-                p="sm"
+              <Link href='/mc/#server' passHref><Anchor
+                p="xs"
                 color="purple"
                 hoverColor="pink" >
-                  Download
-              </Anchor></Link>
-            </Card>
-            <Card variant="subtle" color="pink" m="sm" >
-              <Heading size="lg" className="card-title" p="sm" >Kontrolo (Forge)</Heading>
-              <Paragraph  px="md" >
-                A Minecraft mod for the Forge mod loader. This mod adds a GUI for common commands that can be clicked to be excecuted.
-                The mod also adds a GUI for you to add your own commands through a config file.
-              </Paragraph>
-              <Link href='https://github.com/Lucxjo/Kontrolo-Forge' passHref><Anchor
-                isExternal={true}
-                p="sm"
-                color="purple"
-                hoverColor="pink" >
-                  Github Project
-              </Anchor></Link>
-              <Link href='https://modrinth.com/mod/kontrolo-forge' passHref><Anchor
-                isExternal={true}
-                p="sm"
-                color="purple"
-                hoverColor="pink" >
-                  Download
+                  Server
               </Anchor></Link>
             </Card>
             <Card variant="subtle" color="pink" m="sm" >
@@ -115,7 +93,7 @@ export default function Home() {
               </Anchor></Link>
               <Link href='https://v.ludoviko.xyz' passHref><Anchor
                 isExternal={true}
-                p="sm"
+                p="xs"
                 color="purple"
                 hoverColor="pink" >
                   View
@@ -136,9 +114,9 @@ export default function Home() {
               </Anchor></Link>
             </Card>
           </Box>
-        </Box>
+        </Card>
 
-        <Box rounded="lg" p="md" m="md" color="blackSecondary" id="social" >
+        <Card rounded="lg" p="md" m="md" color="blackSecondary" id="social" >
           <Anchor></Anchor>
           <Box className="list-display" >
             <Heading as="h1" size="2xl" color="purpleCyan" >Social</Heading>
@@ -171,7 +149,7 @@ export default function Home() {
               </li>
             </List>
           </Box>
-        </Box>
+        </Card>
       </main>
     </div>
   )

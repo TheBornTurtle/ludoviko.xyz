@@ -22,6 +22,9 @@ function App({ Component, pageProps }: AppProps) {
           <script type="text/javascript" src="/iubenda.js" />
           <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
           <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charSet="UTF-8" async></script>
+          <script dangerouslySetInnerHTML = {{__html: `
+            window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+          `}}></script>
         </Head>
         <Navigation />
         <Component {...pageProps} />

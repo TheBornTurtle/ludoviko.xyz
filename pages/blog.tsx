@@ -31,7 +31,7 @@ export default function Blog({
                 <meta property="og:title" content={`Ludo's Blog`} key="title" />
             </Head>
             <main>
-                <Box rounded="lg" p="md" m="md" color="blackSecondary" >
+                <Card rounded="lg" p="md" m="md" color="blackSecondary" >
                     <Heading size="2xl" >Blog</Heading>
                         {allPostsData.map(({ id, date, title, description }) => (
                             <Card variant="subtle" color="pink" key={id} p="xs" mt="sm">
@@ -42,7 +42,7 @@ export default function Blog({
                                 <Paragraph mx="sm">{date}</Paragraph>
                             </Card>
                         ))}
-                </Box>
+                </Card>
             </main>
         </div>
     )
