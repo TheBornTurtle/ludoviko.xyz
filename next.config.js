@@ -1,3 +1,8 @@
+const withTM = require("next-transpile-modules")([
+  "unist-util-visit-parents",
+  "unist-util-visit-children"
+]);
+
 module.exports = {
     target: "serverless",
     async rewrites() {
@@ -13,3 +18,9 @@ module.exports = {
       ];
   },
 }
+
+module.exports = withTM({
+  future: {
+    webpack5: true, // if you want to use webpack 5
+  },
+});

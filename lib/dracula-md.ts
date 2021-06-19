@@ -1,4 +1,5 @@
 import visit from 'unist-util-visit'
+import { visitChildren } from 'unist-util-visit-children'
 
 export function links() {
     return transformer
@@ -19,6 +20,24 @@ export function links() {
                 props.rel = 'noopener noreferrer'
                 return
             }
+        }
+    }
+}
+
+export function quote() {
+    return transformer
+
+    function transformer(ast) {
+        visit(ast, 'blockquote', visitor)
+
+        function visitor(node) {
+            const data = node.data || (node.data = {})
+            const props = data.hProperties || (data.hProperties = {})
+            var giveClasses = visitChildren(function(node) {
+                node.data.hProperties.className = 'drac-text drac-text-pink drac-line-height drac-italics drac-m-xs'
+            })
+            props.className = 'drac-text drac-text-pink drac-mb-sm'
+            giveClasses(node)
         }
     }
 }

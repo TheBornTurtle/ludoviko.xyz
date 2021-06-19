@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
-import { links, heading, paragraph, strong, code } from './dracula-md'
+import { links, heading, paragraph, strong, code, quote } from './dracula-md'
 var merge = require('deepmerge')
 var github = require('hast-util-sanitize/lib/github')
 
@@ -64,6 +64,7 @@ export async function getPostData(id) {
     .use(paragraph)
     .use(code)
     .use(heading)
+    .use(quote)
     .use(html, {sanitize: schema})
     .process(matterResult.content)
 
