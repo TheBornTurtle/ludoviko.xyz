@@ -34,6 +34,7 @@ export function quote() {
             const data = node.data || (node.data = {})
             const props = data.hProperties || (data.hProperties = {})
             var giveClasses = visitChildren(function(node) {
+                // @ts-ignore
                 node.data.hProperties.className = 'drac-text drac-text-pink drac-line-height drac-italics drac-m-xs'
             })
             props.className = 'drac-text drac-text-pink drac-mb-sm'
