@@ -1,6 +1,6 @@
 ---
 title: #ProudToBe ME!
-date: 2021-06-18
+date: 2021-06-19
 description: I write about my experiences surrounding questioning my sexuality
 keywords: Ludoviko, blog, Queer, Pride, Gay Pride, Gay, LGBT, LGBTQI+, LGBT+, LGBTQI, comments
 ---
