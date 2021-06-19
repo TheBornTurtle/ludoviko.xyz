@@ -4,7 +4,7 @@ date: '2021-06-19'
 description: 'I write about my experiences surrounding questioning my sexuality'
 keywords: 'Ludoviko, blog, Queer, Pride, Gay Pride, Gay, LGBT, LGBTQI+, LGBT+, LGBTQI, comments'
 ---
-> Gay Pride was not born out of a need to celebrate being gay, but instead our right to exist without prosecution. So maybe instead of wondering why there isn’t a Straight Pride month or movement, straight people should be thankful they don’t need one.
+> Gay Pride was not born out of a need to celebrate being gay, but instead our right to exist without prosecution. So maybe instead of wondering why there isn’t a Straight Pride month or movement, straight people should be thankful they don’t need one.  
 > — L.Z. Granderson, “Why isn’t there Straight Pride month”
 
 ## Introduction
