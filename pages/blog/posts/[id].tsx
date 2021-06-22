@@ -59,7 +59,7 @@ export default function Post({
             <script class="_iub_cs_activate-inline" data-iub-purposes="3" type="text/plain" src="https://latest.cactus.chat/cactus.js"
               data-default-homeserver-url="https://matrix.cactus.chat:8448"
               data-server-name="cactus.chat"
-              data-site-name="5d5351c6"
+              data-site-name="5d5351d7"
               data-comment-section-id="${postData.id}"></script>
             <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
           `
