@@ -21,6 +21,10 @@ module.exports = {
 
 module.exports = withTM({
     target: "serverless",
+    i18n: {
+        locales: ["en", "eo"],
+        defaultLocale: "en"
+    },
     async rewrites() {
         return [
             {

@@ -2,8 +2,15 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { Box, Heading, Anchor, List, Card, Paragraph, Avatar } from '@dracula/dracula-ui'
+import en from '../lang/en'
+import eo from '../lang/eo'
+import { useRouter } from 'next/dist/client/router'
 
 export default function Home() {
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'en' ? en : eo
+
   return (
     <div className={styles.container} data-target="#navbar" data-spy="scroll">
       <Head>
@@ -14,13 +21,13 @@ export default function Home() {
         <Card color="purpleCyan" rounded="lg" p="md" mt="lg" mx="md" >
           <Avatar title="Ludoviko" src="/RingRingTechSupport.png" borderVariant="large" color="cyan" />
           <Heading as="h1" size="2xl" color="black" >Saluton!</Heading>
-          <Heading size="xl" color="black" >Welcome to my currently WIP site!</Heading>
+          <Heading size="xl" color="black" >{t.welcome}</Heading>
         </Card>
 
         <Card rounded="lg" p="md" m="md" color="blackSecondary" id="about" >
           <Anchor></Anchor>
           <Box className="list-display" >
-            <Heading as="h1" size="2xl" color="purpleCyan" >About</Heading>
+            <Heading as="h1" size="2xl" color="purpleCyan" >{t.about}</Heading>
             <Heading size="lg" >So a bit about me:</Heading>
             <List variant="unordered" color="purple" >
               <li className="drac-text drac-text-white" >Age: 21</li>
@@ -36,7 +43,7 @@ export default function Home() {
         <Card rounded="lg" p="md" m="md" color="blackSecondary" id="projects" >
           <Anchor></Anchor>
           <Box className="list-display" >
-            <Heading as="h1" size="2xl" color="purpleCyan" m="md" >Projects</Heading>
+            <Heading as="h1" size="2xl" color="purpleCyan" m="md" >{t.projects}</Heading>
             <Card variant="subtle" color="pink" m="sm" >
               <Heading size="lg" className="card-title" p="sm" >Arbúcies</Heading>
               <Paragraph  px="md" >
@@ -119,12 +126,9 @@ export default function Home() {
         <Card rounded="lg" p="md" m="md" color="blackSecondary" id="social" >
           <Anchor></Anchor>
           <Box className="list-display" >
-            <Heading as="h1" size="2xl" color="purpleCyan" >Social</Heading>
+            <Heading as="h1" size="2xl" color="purpleCyan" >{t.social}</Heading>
             <Paragraph >Here are the places that I spend my time on the internet. Feel free to follow and chat on any of them!</Paragraph>
             <List variant="unordered" color="purple" >
-              <li className="drac-text drac-text-white" >
-                <Link href="https://twitter.com/Ludoviko_" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Twitter</Anchor></Link>
-              </li>
               <li className="drac-text drac-text-white" >
                 <Link href="https://mstdn.social/@Ludoviko" passHref><Anchor isExternal={true} rel="me" color="purple" hoverColor="pink" >Mastodon</Anchor></Link>
               </li>
@@ -137,10 +141,19 @@ export default function Home() {
               <li className="drac-text drac-text-white" >
                 <Link href="mailto:me@ludoviko.xyz" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Email</Anchor></Link>
               </li>
+              <li className="drac-text drac-text-white" >
+                <Link href="https://discord.gg/RJuFxzkwbh" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Discord (co-own, stream focused)</Anchor></Link>
+              </li>
             </List>
             <Paragraph mt="sm">Here are some others that I use less frequently:</Paragraph>
             <List variant="unordered" color="purple">
               <li className="drac-text drac-text-white" >Switch Friend code: SW-1092-1929-2801</li>
+              <li className="drac-text drac-text-white" >
+                <Link href="https://discord.gg/UZRyJrEPTU" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Discord (mine, project focus)</Anchor></Link>
+              </li>
+              <li className="drac-text drac-text-white" >
+                <Link href="https://twitter.com/Ludoviko_" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Twitter</Anchor></Link>
+              </li>
               <li className="drac-text drac-text-white" >
                 <Link href="https://www.twitch.tv/ludoviko_" passHref><Anchor isExternal={true} color="purple" hoverColor="pink" >Twitch.tv</Anchor></Link>
               </li>

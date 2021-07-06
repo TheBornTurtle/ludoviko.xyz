@@ -1,9 +1,21 @@
-import { Anchor, Button, Box } from '@dracula/dracula-ui'
+import { Anchor, Button, Box, Select } from '@dracula/dracula-ui'
 import { FiChevronDown } from 'react-icons/fi'
 import React, { useState } from 'react'
 import Link from 'next/link'
+import en from '../lang/en'
+import eo from '../lang/eo'
+import { useRouter } from 'next/dist/client/router'
 
 export default function Navigation() {
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'en' ? en : eo
+
+  const changeLanguage = (e) => {
+      const locale = e.target.value
+      router.push('/', '/', { locale })
+  }
+
     const [isNavCollapsed, setIsNavCollapsed] = useState(true)
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed)
 
@@ -23,10 +35,14 @@ export default function Navigation() {
             </Button>
             <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarSupportedContent">
                 <div className="navbar-nav me-auto" id="nav-items">
-                    <Link href="/#about" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">About</Anchor></Link>
-                    <Link href="/#projects" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">Projects</Anchor></Link>
-                    <Link  href="/#social" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">Social</Anchor></Link>
-                    <Link href="/blog" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">Blog</Anchor></Link>
+                    <Link href="/#about" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">{t.about}</Anchor></Link>
+                    <Link href="/#projects" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">{t.projects}</Anchor></Link>
+                    <Link  href="/#social" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">{t.social}</Anchor></Link>
+                    <Link href="/blog" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">{t.blog}</Anchor></Link>
+                    <Select className="nav-item" color="purple" onChange={changeLanguage} defaultValue={locale}>
+                        <option value="en">EN</option>
+                        <option value="eo">EO</option>
+                    </Select>
                 </div>
             </div>
         </div>
