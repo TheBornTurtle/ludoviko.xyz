@@ -22,6 +22,11 @@ export default function Home() {
           <Avatar title="Ludoviko" src="/RingRingTechSupport.png" borderVariant="large" color="cyan" />
           <Heading as="h1" size="2xl" color="black" >Saluton!</Heading>
           <Heading size="xl" color="black" >{t.welcome}</Heading>
+          <p></p>
+          <div dangerouslySetInnerHTML={{__html: `
+            <script src="https://liberapay.com/Ludoviko/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/Ludoviko/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+          `}} />
         </Card>
 
         <Card rounded="lg" p="md" m="md" color="blackSecondary" id="about" >

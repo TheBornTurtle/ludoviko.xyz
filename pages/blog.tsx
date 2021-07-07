@@ -35,7 +35,7 @@ export default function Blog({
                     <Heading size="2xl" >Blog</Heading>
                         {allPostsData.map(({ id, date, title, description }) => (
                             <Card variant="subtle" color="pink" key={id} p="xs" mt="sm">
-                                <Link href={`/blog/posts/${id}`} passHref><Anchor mx="sm" mt="sm" color="purple" hoverColor="pink" size="lg">
+                                <Link href={`/blog/posts/${id}`} locale="en" passHref><Anchor mx="sm" mt="sm" color="purple" hoverColor="pink" size="lg">
                                     {title}
                                 </Anchor></Link>
                                 <Paragraph mx="sm" mt="sm">{description}</Paragraph>
