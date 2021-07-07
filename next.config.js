@@ -37,6 +37,19 @@ module.exports = withTM({
             }
       ];
   },
+  async headers() {
+    return [
+        {
+            source: "/(.*)",
+            headers: [
+                {
+                    key: 'Access-Control-Allow-Origin',
+                    value: '*'
+                }
+            ]
+        }
+    ]
+  },
   future: {
     webpack5: true, // if you want to use webpack 5
   },
