@@ -5,7 +5,7 @@ import { Box, Heading, Text, Paragraph } from '@dracula/dracula-ui'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postData = await getPostData(params.id)
   return {
     props: {
@@ -14,7 +14,7 @@ export const getStaticProps = async ({ params }) => {
   }
 }
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds()
   return {
     paths,
@@ -56,7 +56,7 @@ export default function Post({
         <Paragraph>If comments are not loading and you have accepted cookies, please refresh page.</Paragraph>
         <div className="drac-text-white drac-bg-black-secondary" dangerouslySetInnerHTML={{
             __html: `
-            <script class="_iub_cs_activate-inline" data-iub-purposes="3" type="text/plain" src="https://latest.cactus.chat/cactus.js"
+            <script class="_iub_cs_activate-inline" data-iub-purposes="3" type="text/plain" data-suppressedsrc="https://latest.cactus.chat/cactus.js"
               data-default-homeserver-url="https://matrix.cactus.chat:8448"
               data-server-name="cactus.chat"
               data-site-name="5d5351d7"

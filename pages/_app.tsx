@@ -10,10 +10,10 @@ import PlausibleProvider from 'next-plausible'
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <PlausibleProvider trackOutboundLinks={true} domain="ludoviko.xyz" customDomain="">
+      <PlausibleProvider trackOutboundLinks={true} domain="ludoviko.xyz">
         <Head>
           <link rel="icon" href="/RingRingTechSupport.ico" />
-          <meta property="og:title" content="Ludoviko.xyz" key="title" />
+          <meta property="og:title" content="Ludoviko" key="title" />
           <meta name="description" content="Ludoviko's little place on the internet" key="desc" />
           <meta property="og:description" content="Ludoviko's little place on the internet" key="og:desc" />
           <meta property="og:type" content="website" key="og:type" />

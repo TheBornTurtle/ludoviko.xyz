@@ -1,15 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Box, Heading, Anchor, List, Card, Paragraph, Avatar } from '@dracula/dracula-ui'
 import en from '../lang/en'
-import eo from '../lang/eo'
-import { useRouter } from 'next/dist/client/router'
 
 export default function Home() {
-  const router = useRouter()
-  const { locale } = router
-  const t = locale === 'en' ? en : eo
+  const t = en
 
   return (
     <div className={styles.container} data-target="#navbar" data-spy="scroll">
@@ -19,14 +16,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <Card color="purpleCyan" rounded="lg" p="md" mt="lg" mx="md" >
-          <Avatar title="Ludoviko" src="/RingRingTechSupport.png" borderVariant="large" color="cyan" />
+          <span className="drac-avatar drac-bg-green-transparent drac-text-green drac-avatar-lg-stroke" style={{width: 95, height: 95}}>
+            <Image className="drac-avatar" title="Ludoviko" src="/RingRingTechSupport.png" width={90} height={90} />
+          </span>
           <Heading as="h1" size="2xl" color="black" >Saluton!</Heading>
           <Heading size="xl" color="black" >{t.welcome}</Heading>
           <p></p>
-          <div dangerouslySetInnerHTML={{__html: `
-            <script src="https://liberapay.com/Ludoviko/widgets/button.js"></script>
-<noscript><a href="https://liberapay.com/Ludoviko/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
-          `}} />
+          <Link href="https://liberapay.com/Ludoviko/donate" passHref><Anchor><Image src="https://liberapay.com/assets/widgets/donate.svg" width={80} height={30} /></Anchor></Link>
         </Card>
 
         <Card rounded="lg" p="md" m="md" color="blackSecondary" id="about" >

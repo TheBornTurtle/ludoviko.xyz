@@ -3,18 +3,10 @@ import { FiChevronDown } from 'react-icons/fi'
 import React, { useState } from 'react'
 import Link from 'next/link'
 import en from '../lang/en'
-import eo from '../lang/eo'
 import { useRouter } from 'next/dist/client/router'
 
 export default function Navigation() {
-  const router = useRouter()
-  const { locale } = router
-  const t = locale === 'en' ? en : eo
-
-  const changeLanguage = (e) => {
-      const locale = e.target.value
-      router.push('/', '/', { locale })
-  }
+  const t = en
 
     const [isNavCollapsed, setIsNavCollapsed] = useState(true)
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed)
@@ -22,7 +14,7 @@ export default function Navigation() {
     return <Box color="blackSecondary" mx="sm" rounded="lg" mb="lg" px="sm">
     <nav className="navbar fixed-top navbar-expand-lg drac-box drac-bg-black-secondary drac-mx-sm drac-rounded-lg drac-mb-lg drac-px-sm">
         <div className="container-fluid">
-            <Link href="/" passHref><Anchor className="navbar-brand" color="purpleCyan" hoverColor="pinkPurple">Ludoviko.xyz</Anchor></Link>
+            <Link href="/" passHref><Anchor className="navbar-brand" color="purpleCyan" hoverColor="pinkPurple">Ludoviko</Anchor></Link>
             <Button variant="outline" color="purple" className="custom-toggler navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -39,10 +31,6 @@ export default function Navigation() {
                     <Link href="/#projects" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">{t.projects}</Anchor></Link>
                     <Link  href="/#social" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">{t.social}</Anchor></Link>
                     <Link href="/blog" passHref><Anchor className="nav-item nav-link" color="purple" hoverColor="pink">{t.blog}</Anchor></Link>
-                    <Select className="nav-item" color="purple" onChange={changeLanguage} defaultValue={locale}>
-                        <option value="en">EN</option>
-                        <option value="eo">EO</option>
-                    </Select>
                 </div>
             </div>
         </div>
