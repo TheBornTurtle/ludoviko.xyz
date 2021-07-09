@@ -19,6 +19,10 @@ module.exports = {
 }
 
 module.exports = withTM({
+    i18n: {
+        locales: ['en'],
+        defaultLocale: 'en'
+    },
     images: {
         domains: ['liberapay.com'],
     },
