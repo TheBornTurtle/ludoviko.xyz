@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className={styles.container} data-target="#navbar" data-spy="scroll">
       <Head>
-        <title>Ludoviko.xyz</title>
+        <title>Ludoviko</title>
       </Head>
 
       <main className={styles.main}>
@@ -31,7 +31,7 @@ export default function Home() {
             <Heading as="h1" size="2xl" color="pinkPurple" >{t.about}</Heading>
             <Heading size="lg" >So a bit about me:</Heading>
             <List variant="unordered" color="pink" >
-              <li className="drac-text drac-text-white" >Age: 21</li>
+              <li className="drac-text drac-text-white" >Age: 22</li>
               <li className="drac-text drac-text-white" >Location: Europe</li>
               <li className="drac-text drac-text-white" >Sexuality: Whatever it is, it isn't straight!</li>
               <li className="drac-text drac-text-white" >Pronouns: He/him, they/them</li>
