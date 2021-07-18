@@ -14,9 +14,13 @@
   },
   "dependencies": {
     "@dracula/dracula-ui": "^0.8.1",
+    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@next/mdx": "^11.0.1",
     "bootstrap": "^5.0.0-beta3",
     "express": "^4.17.1",
     "gray-matter": "^4.0.3",
+    "image-size": "^1.0.0",
     "next": "^10.2.3",
     "next-plausible": "^1.6.1",
     "next-transpile-modules": "^8.0.0",
@@ -24,7 +28,9 @@
     "react-copy-to-clipboard": "^5.0.3",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
+    "react-markdown": "^6.0.2",
     "remark": "^13.0.0",
+    "remark-gfm": "^1.0.0",
     "remark-html": "^13.0.1",
     "unist-util-visit-children": "^2.0.0"
   },

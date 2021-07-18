@@ -1,3 +1,4 @@
+const withMDX = require('@next/mdx')()
 const withTM = require("next-transpile-modules")([
   "unist-util-visit-parents",
   "unist-util-visit-children"
@@ -19,6 +20,7 @@ module.exports = {
 }
 
 module.exports = withTM({
+    ...withMDX(),
     i18n: {
         locales: ['en'],
         defaultLocale: 'en'

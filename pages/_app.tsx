@@ -19,6 +19,9 @@ function App({ Component, pageProps }: AppProps) {
           <meta property="og:type" content="website" key="og:type" />
           <meta property="og:image" content="/RingRingTechSupport.png" key="og:img" />
           <meta name="keywords" content="Ludoviko, Programming, Minecraft, Game Development, Java, Blog, Kotlin" key="keyw" />
+          <meta name="twitter:card" content="summary"/>
+          <meta name="twitter:site" content="@Ludoviko_" />
+          <meta name="twitter:creator" content="@Ludoviko_"/>
           <script type="text/javascript" src="/iubenda.js" />
           <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
           <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charSet="UTF-8" async></script>

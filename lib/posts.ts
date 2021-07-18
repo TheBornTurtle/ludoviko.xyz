@@ -3,77 +3,48 @@ import path from 'path'
 import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
+import Image from 'next/image'
+import { join } from 'path'
 import { links, heading, paragraph, strong, code, quote } from './dracula-md'
 var merge = require('deepmerge')
 var github = require('hast-util-sanitize/lib/github')
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
-export function getSortedPostsData() {
-  // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory)
-  const allPostsData = fileNames.map(fileName => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, '')
-
-    // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName)
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
-
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents)
-
-    // Combine the data with the id
-    return {
-      id,
-      ...matterResult.data as {date: string; title: string; description: string}
-    }
-  })
-  // Sort posts by date
-  return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1
-    } else {
-      return -1
-    }
-  })
+export function getPostSlugs() {
+  return fs.readdirSync(postsDirectory)
 }
 
-export function getAllPostIds() {
-  const fileNames = fs.readdirSync(postsDirectory)
-  return fileNames.map(fileName => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, '')
-      }
-    }
-  })
-}
-
-export async function getPostData(id) {
-  const fullPath = path.join(postsDirectory, `${id}.md`)
+export function getPostBySlug(slug, fields = []) {
+  const realSlug = slug.replace(/\.md$/, '')
+  const fullPath = join(postsDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const { data, content } = matter(fileContents)
 
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents)
-  var schema = merge(github, {attributes: {'*': ['className'], 'a': ['href', 'target', 'rel']}})
+  const items = {}
 
-  const processedContent = await remark()
-    .use(strong)
-    .use(links)
-    .use(paragraph)
-    .use(code)
-    .use(heading)
-    .use(quote)
-    .use(html, {sanitize: schema})
-    .process(matterResult.content)
+  // Ensure only the minimal needed data is exposed
+  fields.forEach((field) => {
+    if (field === 'id') {
+      items[field] = realSlug
+    }
+    if (field === 'content') {
+      items[field] = content
+    }
 
-  const contentHtml = processedContent.toString()
+    if (data[field]) {
+      items[field] = data[field]
+    }
+  })
 
-  // Combine the data with the id
-  return {
-    id,
-    contentHtml,
-    ...(matterResult.data as { date: string; title: string; description: string })
-  }
+  return items
+}
+
+export function getAllPosts(fields = []) {
+  const slugs = getPostSlugs()
+  const posts = slugs
+    .map((slug) => getPostBySlug(slug, fields))
+    // sort posts by date in descending order
+    .sort((post1: {date: string}, post2: {date:string}) => (post1.date > post2.date ? -1 : 1))
+  return posts
 }
