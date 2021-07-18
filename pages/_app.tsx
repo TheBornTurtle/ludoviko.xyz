@@ -17,7 +17,7 @@ function App({ Component, pageProps }: AppProps) {
           <meta name="description" content="Ludoviko's little place on the internet" key="desc" />
           <meta property="og:description" content="Ludoviko's little place on the internet" key="og:desc" />
           <meta property="og:type" content="website" key="og:type" />
-          <meta property="og:image" content="/RingRingTechSupport.png" key="og:img" />
+          <meta property="og:image" content="https://ludoviko.ch/RingRingTechSupport.png" key="og:img" />
           <meta name="keywords" content="Ludoviko, Programming, Minecraft, Game Development, Java, Blog, Kotlin" key="keyw" />
           <meta name="twitter:card" content="summary"/>
           <meta name="twitter:site" content="@Ludoviko_" />
