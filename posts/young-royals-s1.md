@@ -8,7 +8,7 @@ keywords: 'Ludoviko, blog, comments, young royals'
 > — Edvin Ryding as Prince Wilhelm, Young Royals 2021.
 
 ## Introduction
-So, if you couldn't tell, in this post I'm going to be discussing Young Royals. I feel like I should make a disclaimer first to say that I am by no means a jouralist and this post is entirely an opinion piece. As with all of my posts, this will most likely be badly written and slightly inaccurate. Feel free to discuss in the comments below or [contact me](/#social) if there are any inaccuracies.
+So, if you couldn't tell, in this post I'm going to be discussing Young Royals. I feel like I should make a disclaimer first to say that I am by no means a jouralist and this post is entirely an opinion piece. As with all of my posts, this will most likely be badly written and slightly inaccurate. Feel free to discuss in the comments below or [contact me](/#social) if there are any inaccuracies. I really should add an updated mark to this post since I keep adding extra bits to it each time I watch the series again. I'm currently writing this on my 3rd watch and 1st watch with English dubs. If you enjoy the post, please keep checking back because there will probably be extra additions over time.
 
 I was wanting to use images from the programme in this post but I don't really know copyright law so unless I get permission from Netflix, this isn't going to happen. I was wanting to talk about some colour uses in the programme in a couple of the scenes but I could really do with images to explain this.
 
@@ -64,7 +64,7 @@ My favourite theory is that it is going to resume after Christmas and there is g
 I've seen a theory that suggests that the next season will pick up a few years down the line and that Simon and Wilhelm will see each other after a long break apart after a coverup relationship that is forced upon Wilhelm by the Queen. I sincerely hope that this isn't were the writers take the programme, although I am expecting that the Queen will try to introduce the idea of a fake relationship but Wilhelm decline because he doesn't want to hide himself and who he loves from the world.
 
 ## Final words
-I'm hoping that there will be many more final words on Young Royals in the future, however until then this is it. Thanks so much for reading through my ramble and I hope that if you read it all it gives you th impulse to watch (or rewatch) the programme soon. I'll probably be rewatching the series a few more times until the next season comes out. I'm hoping that I can convince some family members into watching it as well, including my mum.
+I'm hoping that there will be many more final words on Young Royals in the future, however until then this is it. Thanks so much for reading through my ramble and I hope that if you read it all it gives you th impulse to watch (or rewatch) the programme soon. I'll probably be rewatching the series a few more times until the next season comes out. I'm hoping that I can convince some family members into watching it as well, including my mum. I want to add that all of the actors are very talented, especially since some of the scenes are improvised which happen to be my favourite scenes. The writers have done a fabulous job with the series and all of the team involved deserve all the love that they can get. I think my favourite scene is the fish tank scene followed by the field scene that the opening quote is from.
 
 Until the next time!
 
