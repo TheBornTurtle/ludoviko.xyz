@@ -1,27 +1,28 @@
 import Head from 'next/head'
-import { getAllPosts } from '../lib/posts'
+import { getSortedPostsData } from '../lib/posts'
 import { Box, Heading, Anchor, Card, Paragraph } from '@dracula/dracula-ui'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
 export const getStaticProps: GetStaticProps = async () => {
-    const allPosts = getAllPosts([
-    "title",
-    "date",
-    "id",
-    "content",
-    "keywords",
-    "description"
-  ])
-
-  return {
-    props: { allPosts },
-  }
+    const allPostsData = getSortedPostsData()
+    return {
+        props: {
+            allPostsData
+        }
+    }
 }
 
 export default function Blog({
-    allPosts
-}: any
+    allPostsData
+}: {
+    allPostsData: {
+        id: string
+        date: string
+        title: string
+        description: string
+    }[]
+}
 ) {
     return (
         <div data-target="#navbar" data-spy="scroll">
@@ -32,7 +33,7 @@ export default function Blog({
             <main>
                 <Card rounded="lg" p="md" m="md" color="blackSecondary" >
                     <Heading size="2xl" >Blog</Heading>
-                        {allPosts.map(({ id, date, title, description }) => (
+                        {allPostsData.map(({ id, date, title, description }) => (
                             <Card variant="subtle" color="pink" key={id} p="xs" mt="sm">
                                 <Link href={`/blog/posts/${id}`} locale="en" passHref><Anchor mx="sm" mt="sm" color="purple" hoverColor="pink" size="lg">
                                     {title}

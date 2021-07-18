@@ -11,15 +11,3 @@ body {
   float: right;
   width: 200px;
 }
-
-article > blockquote p {
-  color: #ff80bf;
-  font-family: 'Fira Code';
-  size: 1.6rem;
-}
-
-article p {
-  color: #f8f8f2;
-  font-family: 'Fira Code';
-  size: 1.6rem;
-}
